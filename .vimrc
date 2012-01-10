@@ -78,6 +78,9 @@ set showmatch
 set hlsearch
 nnoremap <leader><space> :noh<cr>
 
+" enable matchit
+runtime macros/matchit.vim
+
 
 
 " _______________________________ DUBIOUS
