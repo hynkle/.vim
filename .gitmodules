@@ -7,3 +7,6 @@
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = http://github.com/tpope/vim-surround.git
+[submodule "bundle/The-NERD-Commenter"]
+	path = bundle/The-NERD-Commenter
+	url = http://github.com/vim-scripts/The-NERD-Commenter.git
