@@ -37,13 +37,6 @@ set tabstop=2
 set splitbelow
 set splitright
 
-" show trailing whitespace
-" http://vim.wikia.com/wiki/Highlight_unwanted_spaces
-:highlight ExtraWhitespace ctermbg=red guibg=red
-" stop future colorscheme commands from clearing the highlight group:
-:autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
-:match ExtraWhitespace /\s\+$/
-
 " previous/next buffer
 nmap <C-n> :bn<CR>
 nmap <C-p> :bp<CR>
