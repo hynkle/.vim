@@ -7,6 +7,9 @@ call pathogen#infect()
 " syntax highlighting
 syntax on
 
+" register extra extension => syntax mappings
+au BufRead,BufNewFile *.hamljs set filetype=haml
+
 " filetype detections, plugins, and indentation
 filetype on
 filetype plugin on
