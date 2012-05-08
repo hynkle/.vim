@@ -1,3 +1,8 @@
+" Make Save leave edit mode
+macmenu File.Save  key=<nop>
+map <D-s> :w<CR>
+imap <D-s> <ESC>:w<CR>
+
 " turn off toolbar and scrollbals
 set guioptions+=TlRLrb
 set guioptions-=TlRLrb
