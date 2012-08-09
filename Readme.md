@@ -4,10 +4,9 @@
 
 ```bash
 mkdir ~/.vim
-cd ~/.vim
-git clone git@github.com:hynkle/.vim.git .
-ln -s .vimrc ~/.vimrc
-ln -s .gvimrc ~/.gvimrc
+git clone git@github.com:hynkle/.vim.git ~/.vim
+ln -s ~/.vim/.vimrc ~/.vimrc
+ln -s ~/.vim/.gvimrc ~/.gvimrc
 git submodule init
 git submodule update
 ```
