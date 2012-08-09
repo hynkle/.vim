@@ -9,6 +9,7 @@ syntax on
 
 " register extra extension => syntax mappings
 au BufRead,BufNewFile *.hamljs set filetype=haml
+au BufRead,BufNewFile *.hamlbars set filetype=haml
 
 " filetype detections, plugins, and indentation
 filetype on
@@ -83,3 +84,4 @@ runtime macros/matchit.vim
 
 set wildmenu
 set wildmode=list:longest
+
