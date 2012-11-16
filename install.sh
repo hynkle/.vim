@@ -7,7 +7,6 @@ ln -s $VIMDIR/.gvimrc $HOME/.gvimrc
 
 unset CD_PATH
 cd $VIMDIR
-git submodule init
-git submodule update
+git submodule update --init
 
 exit 0
