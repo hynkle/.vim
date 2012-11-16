@@ -2,11 +2,6 @@
 
 ## installation instructions
 
-```bash
-mkdir ~/.vim
-git clone git@github.com:hynkle/.vim.git ~/.vim
-ln -s ~/.vim/.vimrc ~/.vimrc
-ln -s ~/.vim/.gvimrc ~/.gvimrc
-git submodule init
-git submodule update
-```
+`\curl -fsSkL http://raw.github.com/hynkle/.vim/master/install.sh | bash`
+
+(Of course if you're halfway prudent, you'll take a look at install.sh first.)
