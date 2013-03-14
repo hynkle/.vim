@@ -65,8 +65,6 @@ endfunction
 
 " taming search and moving
 " from http://stevelosh.com/blog/2010/09/coming-home-to-vim/
-nnoremap / /\v
-vnoremap / /\v
 set ignorecase
 set smartcase
 set gdefault
