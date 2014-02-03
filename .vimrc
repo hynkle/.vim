@@ -76,6 +76,9 @@ nnoremap <leader><space> :noh<cr>
 " enable matchit
 runtime macros/matchit.vim
 
+" stop the obnoxious twitching of the vim-json quote-concealing formatter
+let g:vim_json_syntax_conceal = 0
+
 
 
 " _______________________________ DUBIOUS
