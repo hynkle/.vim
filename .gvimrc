@@ -12,6 +12,6 @@ set fuoptions=maxvert,maxhorz
 
 colorscheme jellybeans
 
-set guifont=DejaVu\ Sans\ Mono:h16
+set guifont=DejaVu\ Sans\ Mono:h12
 
 set visualbell
