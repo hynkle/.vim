@@ -15,3 +15,13 @@ colorscheme jellybeans
 set guifont=DejaVu\ Sans\ Mono:h12
 
 set visualbell
+
+" This is to prevent giant pop-up tooltips in MacVim when hovering
+" over things in Ruby code.  I think it's the output of ri, and it's
+" not helpful for me.
+" I'd ideally just set noballooneval to turn them off entirely,
+" but (at least in MacVim) it just gets reenabled by netrw.vim in the
+" application package.
+" Workaround: just make it take forever for the balloons to pop up,
+" and hopefully your mouse will have moved by then.
+set balloondelay=100000
