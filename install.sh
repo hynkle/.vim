@@ -7,6 +7,6 @@ ln -s $VIMDIR/.gvimrc $HOME/.gvimrc
 
 unset CD_PATH
 cd $VIMDIR
-git submodule update --init
+vim +PlugInstall +qall
 
 exit 0

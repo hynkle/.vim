@@ -3,7 +3,7 @@ macmenu File.Save  key=<nop>
 map <D-s> :w<CR>
 imap <D-s> <ESC>:w<CR>
 
-" turn off toolbar and scrollbals
+" turn off toolbar and scrollbars
 set guioptions+=TlRLrb
 set guioptions-=TlRLrb
 
@@ -12,7 +12,7 @@ set fuoptions=maxvert,maxhorz
 
 colorscheme jellybeans
 
-set guifont=DejaVu\ Sans\ Mono:h12
+set guifont=Menlo:h12
 
 set visualbell
 

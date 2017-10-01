@@ -8,9 +8,6 @@
 
 
 ## to add a plugin
-```
-# from your clone of the repo (likely ~/.vim)
-git submodule add git://github.com/uer/plugin-name.git bundle/plugin-name
-git add .gitmodules bundle/plugin-name
-git commit -m "add plugin-name"
-```
+
+Add a `Plug` statement in the .vimrc, then run :PlugInstall from inside vim.
+See the [vim-plug](https://github.com/junegunn/vim-plug) project for more details.

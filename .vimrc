@@ -1,15 +1,8 @@
 " no vi compatibility
 set nocompatible
 
-" load bundles via pathogen
-call pathogen#infect()
-
 " syntax highlighting
 syntax on
-
-" register extra extension => syntax mappings
-au BufRead,BufNewFile *.hamljs set filetype=haml
-au BufRead,BufNewFile *.hamlbars set filetype=haml
 
 " filetype detections, plugins, and indentation
 filetype on
@@ -52,17 +45,6 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 " git blame
 vmap <Leader>g :<C-U>!git blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p <CR>
 
-" tab complete
-function! Tab_Or_Complete()
-  if col('.')>1 && strpart( getline('.'), col('.')-2, 3 ) =~ '^\w'
-    return "\<C-N>"
-  else
-    return "\<Tab>"
-  endif
-endfunction
-:inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
-:set dictionary="/usr/dict/words"
-
 " taming search and moving
 " from http://stevelosh.com/blog/2010/09/coming-home-to-vim/
 set ignorecase
@@ -79,10 +61,23 @@ runtime macros/matchit.vim
 " stop the obnoxious twitching of the vim-json quote-concealing formatter
 let g:vim_json_syntax_conceal = 0
 
-
-
 " _______________________________ DUBIOUS
 
 set wildmenu
 set wildmode=list:longest
 
+
+" _______________________________ PLUGINS
+call plug#begin('~/.vim/plugged')
+Plug 'https://github.com/ctrlpvim/ctrlp.vim.git'
+Plug 'https://github.com/wting/rust.vim.git'
+Plug 'https://github.com/tpope/vim-commentary.git'
+Plug 'https://github.com/hail2u/vim-css3-syntax.git'
+Plug 'https://github.com/tpope/vim-endwise.git'
+Plug 'https://github.com/pangloss/vim-javascript.git'
+Plug 'https://github.com/elzr/vim-json.git'
+Plug 'https://github.com/tpope/vim-rails.git'
+Plug 'https://github.com/tpope/vim-repeat.git'
+Plug 'https://github.com/vim-ruby/vim-ruby.git'
+Plug 'https://github.com/tpope/vim-surround.git'
+call plug#end()
